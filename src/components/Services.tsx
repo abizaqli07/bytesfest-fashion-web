@@ -41,7 +41,7 @@ const Services = (props: Props) => {
           <div className='sub__title'>Our services</div>
           <div className='title'>What we offer</div>
         </div>
-        <div className='flex flex-col justify-center items-center mt-24 gap-8'>
+        <div className='flex flex-wrap justify-center items-center mt-24 gap-8'>
 
           {ServiceDetail.map((service) => (
             <div className=' w-[260px] aspect-[3/4] p-6 flex bg-primaryDark flex-col gap-6 text-center items-center'>

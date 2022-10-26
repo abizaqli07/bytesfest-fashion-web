@@ -9,13 +9,14 @@ import About from '../src/components/About'
 import LearnMore from '../src/components/LearnMore'
 import News from '../src/components/News'
 import ContactUs from '../src/components/ContactUs'
+import Footer from '../src/components/Footer'
 
 const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
         <title>Fashion Web</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logoLight.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Send+Flowers&display=swap" rel="stylesheet"/>
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <LearnMore/>
         <News/>
         <ContactUs/>
+        <Footer/>
       </div>
     </div>
   )

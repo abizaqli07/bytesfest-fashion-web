@@ -104,4 +104,17 @@
   .nav__link{
     @apply hover:text-primary duration-300 ease-out
   }
+
+  /* ========================== Footer Section ===================== */
+  .form__input{
+    @apply bg-transparent focus:outline-none placeholder:text-lg placeholder:font-light placeholder:text-slate-200 py-2 border-b-2 border-gray-600 focus:border-primary
+  }
+
+  .footer__title{
+    @apply text-lg text-slate-200 mb-4
+  }
+
+  .footer__link{
+    @apply text-sm text-shade py-1
+  }
 }
