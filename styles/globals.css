@@ -1,26 +1,107 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/* ================ Fonts ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-  box-sizing: border-box;
-}
+@layer utilities {
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .text-biggest {
+    @apply text-5xl;
   }
-  body {
-    color: white;
-    background: black;
+
+  .text-big {
+    @apply text-3xl;
+  }
+
+  .text-h1 {
+    @apply text-2xl;
+  }
+
+  .text-h2 {
+    @apply text-xl;
+  }
+
+  .text-h3 {
+    @apply text-lg;
+  }
+
+  .text-normal {
+    @apply text-base;
+  }
+
+  .text-small {
+    @apply text-sm;
+  }
+
+  .text-smallest {
+    @apply text-xs;
+  }
+
+  @media screen and (min-width: 968px) {
+    .text-biggest {
+      @apply text-7xl;
+    }
+
+    .text-big {
+      @apply text-4xl;
+    }
+
+    .text-h1 {
+      @apply text-4xl;
+    }
+
+    .text-h2 {
+      @apply text-2xl;
+    }
+
+    .text-h3 {
+      @apply text-xl;
+    }
+
+    .text-normal {
+      @apply text-lg;
+    }
+
+    .text-small {
+      @apply text-base;
+    }
+
+    .text-smallest {
+      @apply text-sm;
+    }
+  }
+
+  /* ==================== Reuse Components ================= */
+  .base-background {
+    @apply from-primaryDark to-secondaryDark via-[#191919];
+  }
+
+  .layout {
+    @apply w-[90%] mx-auto max-w-[1300px] text-white font-poppins;
+  }
+
+  .title__container {
+    @apply w-full flex flex-col text-center items-center justify-center;
+  }
+
+  .sub__title {
+    @apply text-primary font-semibold
+  }
+
+  .title {
+    @apply font-sendFlower text-4xl
+  }
+
+  /* ======================== Learn Section ===================== */
+  .learn__background {
+    background: linear-gradient(to bottom, rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8), rgba(22, 22, 22, 0.85)),
+      url(../src/assets/learnMore.jpg) top center no-repeat;
+    background-size: cover;
+  }
+
+  .nav__link{
+    @apply hover:text-primary duration-300 ease-out
   }
 }
