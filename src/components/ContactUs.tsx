@@ -4,9 +4,9 @@ type Props = {}
 
 const ContactUs = (props: Props) => {
   return (
-    <div className=' w-full min-h-screen base-background bg-gradient-to-tl pt-20'>
+    <div id='contactus' className=' w-full min-h-screen base-background bg-gradient-to-tl pt-20'>
       <div className=' layout flex flex-col justify-center'>
-        <div className=' max-w-[650px] w-full mx-auto md:mx-0 flex flex-col gap-20 neu-press p-12 rounded-[50px]'>
+        <div className=' max-w-[650px] w-full mx-auto md:mx-0 flex flex-col gap-20 neu-convex p-12 rounded-[50px]'>
           <div className=' text-3xl font-semibold'>Contact us</div>
           <div className=' flex flex-col gap-6 w-full'>
 

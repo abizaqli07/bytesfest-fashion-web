@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import AboutImage1 from '../assets/about.png'
 import AboutImage2 from '../assets/about2.png'
-import AboutImage3 from '../assets/news1.png'
+import AboutImage3 from '../assets/about3.png'
 
 import { BsArrowRightShort } from 'react-icons/bs'
 
@@ -55,7 +55,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <motion.div className=' w-full min-h-screen base-background bg-gradient-to-br pt-36 pb-20'
+    <motion.div id='about' className=' w-full min-h-screen base-background bg-gradient-to-br pt-36 pb-20'
       initial="offscreen"
       whileInView="onscreen"
       transition={{

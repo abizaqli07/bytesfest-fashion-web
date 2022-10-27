@@ -100,11 +100,11 @@
   }
 
   .sub__title {
-    @apply text-primary font-semibold
+    @apply text-primary font-semibold md:text-xl lg:text-2xl
   }
 
   .title {
-    @apply font-sendFlower text-4xl
+    @apply font-sendFlower text-4xl md:text-6xl lg:text-7xl
   }
 
   .service__card:hover{

@@ -1,15 +1,52 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay} from "swiper";
+import { EffectCoverflow, Autoplay } from "swiper";
+import type { StaticImageData } from 'next/image'
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 
-import NewsImage1 from '../assets/news1.png'
+import NewsImage1 from '../assets/news1.jpg'
+import NewsImage2 from '../assets/news2.png'
+import NewsImage3 from '../assets/news3.png'
 import { BiRightArrow } from 'react-icons/bi'
 
+interface NewsType {
+  name: String
+  desc: String
+  date: String
+  link: String
+  img: StaticImageData
+}
+
+
+
 function NewsSwiper() {
+
+  const NewsContent: NewsType[] = [
+    {
+      name: "13 Halloween Costumes Inspired By This Years Viral Fashion Moments",
+      desc: "Are you struggling to come up with an amazing Halloween costume this year?",
+      date: "October 11, 2022",
+      link: "https://www.vogue.com/slideshow/halloween-costume-ideas-viral-fashion-moments",
+      img: NewsImage1
+    },
+    {
+      name: "The Princess Diana Uniform in Street Style",
+      desc: "With The Crowns fifth season closely upon us, we`re getting in the mood to dress like Princess Diana.",
+      date: "October 26, 2022",
+      link: "https://www.vogue.com/article/street-style-fashion-week-princess-diana-street-style-looks",
+      img: NewsImage2
+    },
+    {
+      name: "6 Fall Fashion Trends That Are Celebrity-Approved",
+      desc: "Wondering what fall fashion trends are worth the investment right now?",
+      date: "October 26, 2022",
+      link: "https://www.vogue.com/article/6-fall-fashion-trends-inspired-by-celebrity-outfits",
+      img: NewsImage3
+    },
+  ]
 
   return (
     <div>
@@ -32,17 +69,19 @@ function NewsSwiper() {
         className="newsswiper"
       >
 
-        <SwiperSlide>
-          <div className=' w-full h-auto min-h-[300px] xsm:min-h-[250px] max-h-[350px] xsm:max-h-[300px] xsm:max-w-[500px]  flex relative overflow-hidden hover:neu-flat transition-all duration-300 ease-in-out'>
-            <div className=' w-full h-full'><img src={NewsImage1.src} alt="" /></div>
-            <div className=' base-background bg-gradient-to-r h-2/3 xsm:h-full xsm:w-[60%] absolute bottom-0 flex flex-col gap-8 p-4 xsm:hover:w-[90%] xsm:hover:rounded-r-[500px] group transition-all duration-500 ease-in-out'>
-              <div className='text-xl font-semibold'>Outfit Trend</div>
-              <div className=' text-shade max-w-[300px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit voluptates </div>
-              <div className=' text-shade font-light'>-- 9 Oktober 2022</div>
-              <div className=' w-fit py-2 px-2 bg-white rounded-full text-4xl text-primary absolute xsm:-right-12 xsm:top-[50%] xsm:translate-y-[-50%] opacity-0 xsm:group-hover:opacity-100 xsm:group-hover:right-6 transition-all duration-300 ease-in-out cursor-pointer'><BiRightArrow/></div>
+        {NewsContent.map((data) => (
+          <SwiperSlide>
+            <div className=' w-full h-auto min-h-[300px] xsm:min-h-[250px] max-h-[350px] xsm:max-h-[300px] xsm:max-w-[500px]  flex relative overflow-hidden hover:neu-flat transition-all duration-300 ease-in-out'>
+              <div className=' w-full h-full'><img src={data.img.src} alt="" /></div>
+              <div className=' base-background bg-gradient-to-r h-2/3 xsm:h-full xsm:w-[60%] absolute bottom-0 flex flex-col gap-8 p-4 xsm:hover:w-[90%] xsm:hover:rounded-r-[500px] group transition-all duration-500 ease-in-out'>
+                <div className='text-xl font-semibold max-w-[270px]'>{data.name}</div>
+                <div className=' text-shade max-w-[270px]'>{data.desc} </div>
+                <div className=' text-shade font-light'>-- {data.date}</div>
+                <div className=' w-fit py-2 px-2 bg-white rounded-full text-4xl text-primary absolute xsm:-right-12 xsm:top-[50%] xsm:translate-y-[-50%] opacity-0 xsm:group-hover:opacity-100 xsm:group-hover:right-6 transition-all duration-300 ease-in-out cursor-pointer'><a href={`${data.link}`}><BiRightArrow /></a></div>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
 
       </Swiper>
     </div >

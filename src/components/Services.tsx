@@ -50,24 +50,24 @@ const Services = (props: Props) => {
 
   const ServiceDetail: Details[] = [
     {
-      name: "Best Classified",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+      name: "User Friendly",
+      desc: "MiSides brings comfort and friendliness to the user by considering many things. Misides is the best community for people who are looking for minimalist fashion",
       icon: ServiceImage1
     },
     {
-      name: "User Friendly",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+      name: "Best Classification",
+      desc: "With so many fashions available, MiSides comes with a breakthrough to classify fashion into certain categories to make it easier for you to find the design you like.",
       icon: ServiceImage2
     },
     {
-      name: "Newest Trends",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+      name: "Latest Trends",
+      desc: "MiSides always keeps up and is present in every latest fashion trend for you, of course, to look more trendy and confident to show off",
       icon: ServiceImage3
     }
   ]
 
   return (
-    <motion.div className='w-full min-h-screen base-background bg-gradient-to-bl pt-36 pb-12'
+    <motion.div id='service' className='w-full min-h-screen base-background bg-gradient-to-bl pt-36 pb-36'
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: true, amount: 0.3 }}

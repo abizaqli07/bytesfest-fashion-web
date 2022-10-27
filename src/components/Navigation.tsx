@@ -115,11 +115,11 @@ const Navigation = () => {
           </svg>
 
           <div className=' flex flex-col text-white text-lg font-light justify-center items-center text-center gap-6'>
-            <motion.div variants={NavLinkAnimate} className='nav__link'><a href="#">Home</a></motion.div>
-            <motion.div variants={NavLinkAnimate} className='nav__link'><a href="#">Service</a></motion.div>
-            <motion.div variants={NavLinkAnimate} className='nav__link'><a href="#">About Us</a></motion.div>
-            <motion.div variants={NavLinkAnimate} className='nav__link'><a href="#">News</a></motion.div>
-            <motion.div variants={NavLinkAnimate} className='nav__link'><a href="#">Contact Us</a></motion.div>
+            <motion.div variants={NavLinkAnimate} className='nav__link' onClick={() => handleActive(active)}><a href="#home">Home</a></motion.div>
+            <motion.div variants={NavLinkAnimate} className='nav__link' onClick={() => handleActive(active)}><a href="#service">Service</a></motion.div>
+            <motion.div variants={NavLinkAnimate} className='nav__link' onClick={() => handleActive(active)}><a href="#about">About Us</a></motion.div>
+            <motion.div variants={NavLinkAnimate} className='nav__link' onClick={() => handleActive(active)}><a href="#news">News</a></motion.div>
+            <motion.div variants={NavLinkAnimate} className='nav__link' onClick={() => handleActive(active)}><a href="#contactus">Contact Us</a></motion.div>
           </div>
         </motion.div>
       )}

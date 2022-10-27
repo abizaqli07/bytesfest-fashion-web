@@ -36,13 +36,13 @@ const Footer = (props: Props) => {
       }}
     >
       <div className=' layout'>
-        <div className=' flex flex-wrap gap-x-6 gap-y-16 justify-around items-center'>
+        <div className=' flex flex-wrap gap-x-6 gap-y-16 justify-around items-start'>
 
           <motion.div variants={TextAnimate} className=' flex gap-4'>
             <div><Image src={Logo.src} height="35px" width="35px" /></div>
             <div>
               <div className=' footer__title'>Mi Sides</div>
-              <div className=' footer__text'>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.</div>
+              <div className=' footer__text'>Clean lines, silent expressiveness, modern sophistication. <br /> Simplicity is everything.</div>
             </div>
           </motion.div>
 
