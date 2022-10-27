@@ -1,22 +1,48 @@
 import React from 'react'
 import NewsSwiper from './NewsSwiper'
+import { motion } from 'framer-motion'
+
+
+const TextAnimate = {
+  offscreen: {
+    y: 200,
+    opacity: 0
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      duration: 1
+    }
+  }
+}
 
 type Props = {}
 
 const News = (props: Props) => {
   return (
-    <div className=' w-full min-h-screen base-background bg-gradient-to-bl pt-20'>
+    <motion.div className=' w-full min-h-screen base-background bg-gradient-to-bl pt-20'
+      initial="offscreen"
+      whileInView="onscreen"
+      transition={{
+        staggerChildren: .2,
+      }}
+      viewport={{
+        once: true
+      }}
+    >
       <div className='layout'>
-        <div className=' title__container'>
+        <motion.div className=' title__container' variants={TextAnimate}>
           <div className=' sub__title'>Newest news</div>
           <div className=' title'>Keepup With Fashion</div>
-        </div>
+        </motion.div>
 
         <div className='mt-20'>
-          <NewsSwiper/>
+          <NewsSwiper />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

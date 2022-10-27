@@ -78,6 +78,19 @@
     @apply from-primaryDark to-secondaryDark via-[#191919];
   }
 
+  .neu-flat{
+    box-shadow:  13px 13px 25px #0f0f0f, -13px -13px 25px #1d1d1d;
+  }
+
+  .neu-convex{
+    box-shadow:  36px 36px 71px #0f0f0f, -36px -36px 71px #232323;
+    background: linear-gradient(145deg, #1b1b1b, #171717);
+  }
+
+  .neu-press {
+    box-shadow: inset 36px 36px 71px #0f0f0f, inset -36px -36px 71px #232323;
+  }
+
   .layout {
     @apply w-[90%] mx-auto max-w-[1300px] text-white font-poppins;
   }
@@ -92,6 +105,11 @@
 
   .title {
     @apply font-sendFlower text-4xl
+  }
+
+  .service__card:hover{
+    box-shadow:  13px 13px 25px #0f0f0f, -13px -13px 25px #1d1d1d;
+    @apply duration-500 transition-all ease-out
   }
 
   /* ======================== Learn Section ===================== */
@@ -114,7 +132,17 @@
     @apply text-lg text-slate-200 mb-4
   }
 
+  .footer__text{
+    @apply text-sm text-shade py-1 transition-all duration-300 ease-in-out md:text-base
+  }
+
   .footer__link{
-    @apply text-sm text-shade py-1
+    @apply text-sm text-shade py-1 cursor-pointer transition-all duration-300 ease-in-out md:text-base
+  }
+
+  .footer__link:hover{
+    -webkit-text-stroke: 0.05rem #fff;
+    transform: scale(1.1);
+    color: #fff;
   }
 }
