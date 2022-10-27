@@ -22,7 +22,7 @@ const TextAnimate = {
 
 const Footer = () => {
   return (
-    <motion.div className=' w-full base-background bg-gradient-to-bl pb-8'
+    <motion.div className=' w-full base-background bg-gradient-to-bl pb-8 pt-36'
       initial="offscreen"
       whileInView="onscreen"
       transition={{

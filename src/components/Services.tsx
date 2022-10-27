@@ -94,7 +94,7 @@ const Services = () => {
             >
               <div className='w-[50px] h-auto'><img src={service.icon.src} /></div>
               <div className=' font-semibold'>{service.name}</div>
-              <div className=' text-sm text-shade md:text-base'>{service.desc}</div>
+              <div className=' text-sm text-shade'>{service.desc}</div>
               <div className=' text-primary font-semibold flex gap-3 items-center group hover:text-primaryHover cursor-pointer transition-all duration-300 ease-out'>More <BsArrowRightShort className='text-2xl font-bold group-hover:translate-x-2 transition-all duration-300 ease-out' /></div>
             </motion.div>
           ))}

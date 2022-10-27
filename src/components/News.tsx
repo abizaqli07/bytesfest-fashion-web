@@ -21,7 +21,7 @@ const TextAnimate = {
 
 const News = () => {
   return (
-    <motion.div id='news' className=' w-full min-h-screen base-background bg-gradient-to-bl pt-20'
+    <motion.div id='news' className=' w-full min-h-screen base-background bg-gradient-to-bl pt-36 pb-20'
       initial="offscreen"
       whileInView="onscreen"
       transition={{

@@ -38,7 +38,7 @@ const Header = () => {
         <div className='relative z-10 w-full min-h-screen flex flex-col justify-center items-center'>
           <div className='flex flex-col justify-center items-center gap-6'>
             <motion.div 
-              className='w-[50px] h-[200px] md:w-[70px] md:h-[300px] border-[5px] md:border-[7px] border-primary'
+              className='w-[50px] h-[200px] border-[5px] border-primary'
               initial={{
                 y: -100,
                 opacity: 0
@@ -63,7 +63,7 @@ const Header = () => {
             </motion.div>
 
           </div>
-          <div className='text-sm text-shade text-center absolute bottom-8 sm:hidden md:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing, magna aliqua.</div>
+          <div className='text-sm text-shade text-center absolute bottom-8 sm:hidden'>Lorem ipsum dolor sit amet, consectetur adipiscing, magna aliqua.</div>
           <div className=' hidden sm:flex absolute bottom-8 gap-8 right-12'>
             <motion.div className=' footer__wrap'
               initial="hidden"

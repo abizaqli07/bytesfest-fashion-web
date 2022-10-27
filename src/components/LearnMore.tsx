@@ -67,7 +67,7 @@ const LearnMore = () => {
           <motion.div variants={TextAnimate} className=' font-sendFlower text-5xl '>Find Your Confident</motion.div>
           <div className=' flex flex-col gap-8 justify-end items-end'>
             <motion.div variants={TextAnimate} className=' text-slate-200 mx-auto md:mx-0'>Freestyle with minimalist outfit.</motion.div>
-            <motion.div variants={TextAnimate} className=' text-shade text-sm md:max-w-[40%] md:text-base'>A wide selection of clothes and accessories with a minimalist style that can be explored further to determine the style that best fits your style. Always look confident with an elegant and stylish design </motion.div>
+            <motion.div variants={TextAnimate} className=' text-shade text-sm md:max-w-[40%]'>A wide selection of clothes and accessories with a minimalist style that can be explored further to determine the style that best fits your style. Always look confident with an elegant and stylish design </motion.div>
           </div>
         </div>
       </div>
