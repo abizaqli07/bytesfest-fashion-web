@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import HeaderImage from '../assets/HeaderImage.png';
+import HeaderImage from '../assets/headerImage.png';
 
 const TextAnimation = {
   hidden: {
