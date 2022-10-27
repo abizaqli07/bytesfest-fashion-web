@@ -13,6 +13,7 @@ import NewsImage3 from '../assets/news3.png'
 import { BiRightArrow } from 'react-icons/bi'
 
 interface NewsType {
+  key: React.Key
   name: String
   desc: String
   date: String
@@ -26,6 +27,7 @@ function NewsSwiper() {
 
   const NewsContent: NewsType[] = [
     {
+      key: 1,
       name: "13 Halloween Costumes Inspired By This Years Viral Fashion Moments",
       desc: "Are you struggling to come up with an amazing Halloween costume this year?",
       date: "October 11, 2022",
@@ -33,6 +35,7 @@ function NewsSwiper() {
       img: NewsImage1
     },
     {
+      key: 2,
       name: "The Princess Diana Uniform in Street Style",
       desc: "With The Crowns fifth season closely upon us, we`re getting in the mood to dress like Princess Diana.",
       date: "October 26, 2022",
@@ -40,6 +43,7 @@ function NewsSwiper() {
       img: NewsImage2
     },
     {
+      key: 3,
       name: "6 Fall Fashion Trends That Are Celebrity-Approved",
       desc: "Wondering what fall fashion trends are worth the investment right now?",
       date: "October 26, 2022",
@@ -70,7 +74,7 @@ function NewsSwiper() {
       >
 
         {NewsContent.map((data) => (
-          <SwiperSlide>
+          <SwiperSlide key={data.key}>
             <div className=' w-full h-auto min-h-[300px] xsm:min-h-[250px] max-h-[350px] xsm:max-h-[300px] xsm:max-w-[500px]  flex relative hover:neu-flat transition-all duration-300 ease-in-out overflow-hidden'>
               <div className=' w-full h-full'><img src={data.img.src} alt="" /></div>
               <div className=' base-background bg-gradient-to-r h-2/3 xsm:h-full xsm:w-[60%] absolute bottom-0 flex flex-col gap-8 p-4 xsm:hover:w-[90%] xsm:hover:rounded-r-[500px] group transition-all duration-500 ease-in-out'>

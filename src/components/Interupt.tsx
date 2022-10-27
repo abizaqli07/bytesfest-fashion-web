@@ -57,7 +57,7 @@ const Interupt = () => {
         <div className=' flex flex-col gap-y-24 gap-x-8 md:flex-row justify-center lg:w-[50%] lg:ml-auto'>
           <motion.div variants={TextAnimate} className=' text-center text-sm text-shade md:text-left md:text-base'>Minimalist and simple are elements that give the impression of elegance and class without unnecessary quantity.</motion.div>
           <div className=' text-center text-sm flex flex-col gap-8 md:text-left md:text-base'>
-            <motion.div variants={TextAnimate} className=' text-shade'>Look elegant is everyone's desire, here we embody an elegance with a simplicity that excels and stands out. Spread the air of luxury wherever you go</motion.div>
+            <motion.div variants={TextAnimate} className=' text-shade'>Look elegant is everyone`s desire, here we embody an elegance with a simplicity that excels and stands out. Spread the air of luxury wherever you go</motion.div>
             <motion.div variants={TextAnimate} className=' text-slate-200'>Minimalism and elegance is not just a word but a way of life and passion. Show your elegance all over the place</motion.div>
           </div>
         </div>
