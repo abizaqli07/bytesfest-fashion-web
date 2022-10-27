@@ -81,7 +81,7 @@ const Header = () => {
             >
               <motion.div variants={TextAnimation} className=' footer__title'>Get in Touch</motion.div>
               <motion.div variants={TextAnimation} className=' footer__link'>misides.business@gmail.com</motion.div>
-              <motion.div variants={TextAnimation} className=' footer__link'>+00 81903 19102</motion.div>
+              <motion.div variants={TextAnimation} className=' footer__link'>+62 82131458838</motion.div>
             </motion.div>
           </div>
         </div>

@@ -62,7 +62,8 @@ const About = (props: Props) => {
         staggerChildren: .2,
       }}
       viewport={{
-        once: true
+        once: true,
+        amount: .3
       }}
     >
       <div className=' layout flex flex-col gap-y-20 md:flex-row-reverse md:gap-16 overflow-hidden sm:overflow-visible'>

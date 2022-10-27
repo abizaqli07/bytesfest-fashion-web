@@ -123,6 +123,11 @@
     @apply hover:text-primary duration-300 ease-out
   }
 
+  .explore__button::after{
+    content: "";
+    @apply bg-primary absolute bottom-0 right-0 w-full h-[3px] z-[-1] transition-all duration-300 ease-in-out;
+  }
+
   /* ========================== Footer Section ===================== */
   .form__input{
     @apply bg-transparent focus:outline-none placeholder:text-lg placeholder:font-light placeholder:text-slate-200 py-2 border-b-2 border-gray-600 focus:border-primary

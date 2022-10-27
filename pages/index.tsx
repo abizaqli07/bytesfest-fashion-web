@@ -13,9 +13,9 @@ import Footer from '../src/components/Footer'
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Head>
-        <title>Fashion Web</title>
+        <title>Mi Sides</title>
         <link rel="icon" href="/logoLight.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

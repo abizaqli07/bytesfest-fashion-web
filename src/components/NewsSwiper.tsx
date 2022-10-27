@@ -71,12 +71,12 @@ function NewsSwiper() {
 
         {NewsContent.map((data) => (
           <SwiperSlide>
-            <div className=' w-full h-auto min-h-[300px] xsm:min-h-[250px] max-h-[350px] xsm:max-h-[300px] xsm:max-w-[500px]  flex relative overflow-hidden hover:neu-flat transition-all duration-300 ease-in-out'>
+            <div className=' w-full h-auto min-h-[300px] xsm:min-h-[250px] max-h-[350px] xsm:max-h-[300px] xsm:max-w-[500px]  flex relative hover:neu-flat transition-all duration-300 ease-in-out overflow-hidden'>
               <div className=' w-full h-full'><img src={data.img.src} alt="" /></div>
               <div className=' base-background bg-gradient-to-r h-2/3 xsm:h-full xsm:w-[60%] absolute bottom-0 flex flex-col gap-8 p-4 xsm:hover:w-[90%] xsm:hover:rounded-r-[500px] group transition-all duration-500 ease-in-out'>
-                <div className='text-xl font-semibold max-w-[270px]'>{data.name}</div>
-                <div className=' text-shade max-w-[270px]'>{data.desc} </div>
-                <div className=' text-shade font-light'>-- {data.date}</div>
+                <div className='text-sm lg:text-xl font-semibold w-[90%] max-w-[270px]'>{data.name}</div>
+                <div className=' text-shade text-sm lg:text-base w-[90%] max-w-[270px]'>{data.desc} </div>
+                <div className=' text-shade text-sm lg:text-base font-light'>-- {data.date}</div>
                 <div className=' w-fit py-2 px-2 bg-white rounded-full text-4xl text-primary absolute xsm:-right-12 xsm:top-[50%] xsm:translate-y-[-50%] opacity-0 xsm:group-hover:opacity-100 xsm:group-hover:right-6 transition-all duration-300 ease-in-out cursor-pointer'><a href={`${data.link}`}><BiRightArrow /></a></div>
               </div>
             </div>

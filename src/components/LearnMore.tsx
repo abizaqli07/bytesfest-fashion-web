@@ -73,7 +73,7 @@ const LearnMore = (props: Props) => {
         </div>
       </div>
 
-      <motion.div variants={TextRAnimate} className=' relative z-[2] w-fit ml-auto mt-24 text-white font-semibold text-lg pr-12 pb-2 border-b-2 border-primary'>Start explore now</motion.div>
+      <motion.div variants={TextRAnimate} className=' relative z-[2] w-fit ml-auto mt-24 text-white font-semibold text-lg pr-12 pb-2 pl-2 explore__button [&:hover:after]:h-full cursor-pointer transition-all duration-300 ease-in-out'>Start explore now</motion.div>
     </motion.div>
   )
 }
