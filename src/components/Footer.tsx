@@ -20,10 +20,7 @@ const TextAnimate = {
   }
 }
 
-
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <motion.div className=' w-full base-background bg-gradient-to-bl pb-8'
       initial="offscreen"

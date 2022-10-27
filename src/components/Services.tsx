@@ -38,7 +38,6 @@ const CardAnimate = {
   }
 }
 
-type Props = {}
 
 interface Details {
   name: String
@@ -46,7 +45,7 @@ interface Details {
   icon: StaticImageData
 }
 
-const Services = (props: Props) => {
+const Services = () => {
 
   const ServiceDetail: Details[] = [
     {

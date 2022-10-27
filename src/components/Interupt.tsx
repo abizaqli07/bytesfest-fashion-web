@@ -33,10 +33,7 @@ const BackAnimate = {
 }
 
 
-
-type Props = {}
-
-const Interupt = (props: Props) => {
+const Interupt = () => {
   return (
     <motion.div className=' w-full min-h-screen pt-20 overflow-hidden neu-convex'
       initial="offscreen"

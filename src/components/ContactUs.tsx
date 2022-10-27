@@ -1,8 +1,7 @@
 import React from 'react'
 
-type Props = {}
 
-const ContactUs = (props: Props) => {
+const ContactUs = () => {
   return (
     <div id='contactus' className=' w-full min-h-screen base-background bg-gradient-to-tl pt-20'>
       <div className=' layout flex flex-col justify-center'>

@@ -45,9 +45,8 @@ const TextRAnimate = {
   }
 }
 
-type Props = {}
 
-const LearnMore = (props: Props) => {
+const LearnMore = () => {
   return (
     <motion.div className=' w-full min-h-screen base-background bg-gradient-to-tr relative neu-flat'
       initial="offscreen"

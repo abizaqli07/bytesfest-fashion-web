@@ -51,9 +51,7 @@ const ImageAnimate = {
   }
 }
 
-type Props = {}
-
-const About = (props: Props) => {
+const About = () => {
   return (
     <motion.div id='about' className=' w-full min-h-screen base-background bg-gradient-to-br pt-36 pb-20'
       initial="offscreen"
